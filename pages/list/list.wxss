@@ -38,4 +38,12 @@ swiper-item:nth-child(2) .item{
 }
 swiper-item:nth-child(3) .item{
   background-color: lightpink;
+<<<<<<< HEAD
+=======
+}
+
+
+image{
+  border: 1px red solid;
+>>>>>>> ccd97e8 (36集)
 }

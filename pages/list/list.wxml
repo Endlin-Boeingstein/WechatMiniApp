@@ -14,4 +14,32 @@
 <swiper-item>
   <view class="item">C</view>
 </swiper-item>
+<<<<<<< HEAD
 </swiper>
+=======
+</swiper>
+
+<view>
+手机号支持长按选中效果
+<text selectable>10000000000</text>
+</view>
+<rich-text nodes="<h1 style='color:red;'>标题</h1>"></rich-text>
+
+<button>普通按钮</button>
+<button type="primary">主色调按钮</button>
+<button type="warn">警告按钮</button>
+
+<button size="mini">普通按钮</button>
+<button type="primary" size="mini">主色调按钮</button>
+<button type="warn" size="mini">警告按钮</button>
+
+<button size="mini" plain>普通按钮</button>
+<button type="primary" size="mini" plain>主色调按钮</button>
+<button type="warn" size="mini" plain>警告按钮</button>
+
+<image></image>
+<image src="/images/AA1b9EO9.png" mode="aspectFit"></image>
+<image src="/images/AA1b9EO9.png" mode="aspectFill"></image>
+<image src="/images/AA1b9EO9.png" mode="widthFix"></image>
+<image src="/images/AA1b9EO9.png" mode="heightFix"></image>
+>>>>>>> ccd97e8 (36集)

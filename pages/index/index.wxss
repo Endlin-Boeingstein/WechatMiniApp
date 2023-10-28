@@ -1,4 +1,17 @@
 /**index.wxss**/
+@import "/common/common.wxss";
+view{
+  background-color: lightpink;
+}
+
+input {
+  border:1px,solid,#eee;
+  margin:5px;
+  padding:5px;
+  border-radius: 3px;
+}
+
+
 .userinfo {
   display: flex;
   flex-direction: column;
