@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text class="g-red-text">pages/home/home.wxml</text>
+
+<my-test></my-test>
