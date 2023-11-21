@@ -5,43 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  getInfo(){
-    wx.request({
-      url: 'https://www.escook.cn/api/get',
-      method:'GET',
-      data:{
-        name:'zs',
-        age:20
-      },
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-  },
-
-  postInfo(){
-    wx.request({
-      url: 'https://www.escook.cn/api/post',
-      method:'POST',
-      data:{
-        name:'ls',
-        age:33
-      },
-      success:(res)=>{
-        console.log(res)
-      }
-    })
+    //存放轮播图
+    swiperList:[],
+    //存放九宫格
+    gridList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getInfo()
-    this.postInfo()
+    this.getSwiperList();
+    this.getGridList();
+  },
+
+  //获取轮播图数据
+  getSwiperList(){
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/slides',
+      method:'GET',
+      success:(res)=>{
+        console.log(res)
+        this.setData({
+          swiperList:res.data
+        })
+      }
+    })
+  },
+//获取九宫格
+  getGridList(){
+    wx.request({
+      url: 'https://applet-base-api-t.itheima.net/categories',
+      method:'GET',
+      success:(res)=>{
+        this.setData({
+          gridList:res.data
+        })
+      }
+    })
   },
 
   /**
