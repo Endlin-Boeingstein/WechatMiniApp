@@ -7,7 +7,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    //第一种简化方式
+    // max:Number
+    //第二种完整方式
+    max:{
+      type:Number,
+      value:10
+    }
   },
 
   /**
@@ -23,8 +29,10 @@ Component({
   methods: {
     //点击事件处理函数
     addCount(){
+      if(this.data.count>=this.properties.max) return
       this.setData({
-        count:this.data.count+1
+        count:this.data.count+1,
+        max:this.properties.max+1
       })
       this._showCount()
     },
@@ -33,6 +41,11 @@ Component({
         title: 'count是'+this.data.count,
         icon:'none'
       })
+    },
+    showInfo(){
+      console.log(this.data)
+      console.log(this.properties)
+      console.log(this.data===this.properties)
     }
   }
 })
