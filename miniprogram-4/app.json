@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/cart/cart",
-    "pages/info/info"
+    "pages/info/info",
+    "pages/shoplist/shoplist"
   ],
   "window": {
     "backgroundTextStyle": "light",
